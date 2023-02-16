@@ -4,9 +4,9 @@
 /**
  * main - Entry point
  *
- * Description: UNIX is basically a simple operating system
+ * Description: UNIX is basically a simple operating system.
  *
- * Return: 1 (Success)
+ * Retrun: 1 (Success)
  */
 
 int main(void)
