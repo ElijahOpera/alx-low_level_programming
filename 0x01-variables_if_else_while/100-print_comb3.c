@@ -12,18 +12,17 @@ int main(void)
 	int x;
 	int y;
 
-	for (x = '0'; x < '9'; x++)
+	for (x = '0'; x < '9'; x++) /* prints x digits */
 	{
-		for (y = x + 1; y <= '9'; y++)
+		for (y = x + 1; y <= '9'; y++) /* prints y digits */
 		{
-			if (y != x)
+			if (!((x == y) || (y > x))) /* repition elimination */
 			{
 				putchar(x);
 				putchar(y);
 
-				if (x == '8' && y == '9')
+				if (!(x == '9' && y == '8')) /* adds commas and spaces */
 				{
-					continue;
 					putchar(',');
 					putchar(' ');
 				}
