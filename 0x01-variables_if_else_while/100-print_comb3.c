@@ -9,17 +9,17 @@
 
 int main(void)
 {
-	int x;
-	int y;
+	int x = 'o';
+	int y = '0';
 
-	for (x = '0'; x < '9'; x++) /* prints x digits */
+	for (y = '0'; y <= '9'; y++) /* prints y digits */
 	{
-		for (y = x + 1; y <= '9'; y++) /* prints y digits */
+		for (x = '0'; x <= '9'; x++) /* prints x digits */
 		{
 			if (!((x == y) || (y > x))) /* repition elimination */
 			{
-				putchar(x);
 				putchar(y);
+				putchar(x);
 
 				if (!(x == '9' && y == '8')) /* adds commas and spaces */
 				{
