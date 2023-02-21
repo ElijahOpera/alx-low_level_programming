@@ -9,19 +9,14 @@
 
 int print_last_digit(int n)
 {
-	int last_digit;
+	int last_digit = n % 10;
 
-	/* Compute the absolute value of the number */
-	if (n < 0)
+	if (last_digit < 0)
 	{
-		n = -n;
+		last_digit *= -1;
 	}
-
-	/* Get the last digit of the number */
-	last_digit = n % 10;
 
 	_putchar(last_digit + '0');
 
-	/* Return the value of the last digit */
-	return (last_digit);
+	return (0);
 }
