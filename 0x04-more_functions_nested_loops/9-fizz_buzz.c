@@ -13,32 +13,28 @@
 int main(void)
 {
 	int i;
-	char a[] = "Fizz";
-	char b[] = "Buzz";
-	char ab[] = "FizzBuzz";
 
-	for (i = 1; 1 <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (i == 100)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("%s", b);
-		}
-		else if ((i % 3 == 0) && (i % 5 == 0))
-		{
-			printf("%s", ab);
+			printf("FizzBuzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s", a);
+			printf("Fizz ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s", b);
+			printf("Buzz ");
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%d ", i);
 		}
 	}
+
 	printf("\n");
+
+	return (0);
 }
