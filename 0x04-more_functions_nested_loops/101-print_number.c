@@ -3,26 +3,28 @@
 /**
  * print_number - prints an integer.
  * @n: the integer to print.
+ * Return: void.
  */
 
 void print_number(int n)
 {
-	int div = 1;
+	unsigned int num;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		num = -n;
+	}
+	else
+	{
+		num = n;
 	}
 
-	while (n / div >= 10)
+	if (num / 10)
 	{
-		div *= 10;
+		print_number(num / 10);
 	}
 
-	while (div != 0)
-	{
-		_putchar((n / div) % 10 + '0');
-			div /= 10;
-	}
+	_putchar((num % 10) + '0');
 }
+
