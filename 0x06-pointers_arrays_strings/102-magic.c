@@ -1,12 +1,4 @@
 #include <stdio.h>
-
-/**
- * main - prints a[2] = 98
- * Followed by a new line.
- *
- * Return: 0
- */
-
 int main(void)
 {
 	int n;
@@ -15,8 +7,8 @@ int main(void)
 
 	a[2] = 1024;
 	p = &n;
-
 	/**
+	 * main - prints a[2] = 98
 	 * write your line of code here...
 	 * Remember:
 	 * - you are not allowed to use a
